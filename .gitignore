@@ -7,7 +7,8 @@ Data/
 Busco/
 # Ignore files and directories that start with a dot
 .*
-
+*.mod
+*.cfg
 # ignore fasata,fna,faa,ffn,frn,gbk,gbff,gb,emb files
 *.fasta
 *.fna

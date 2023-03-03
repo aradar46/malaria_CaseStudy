@@ -98,3 +98,37 @@ We can examine the GC% after removal of birds scaffols
     GC% after removing bird scaffolds
 
 #### 1.2.2 Gene Prediction
+
+```
+ 
+$ mkdir  2_Ht_GenePredict
+$ cd 2_Ht_GenePredict
+$ gmes_petap.pl --ES --sequence ../1_Ht_scaffoldRemoval/Ht_gc26_3000.fa --min_contig 7000
+
+
+```
+
+# convert to fasta
+
+
+```
+
+## header problem
+cat genemark.gtf | sed "s/ GC=.*\tGeneMark.hmm/\tGeneMark.hmm/" > Ht2_header.gff
+cd ..
+
+
+
+```
+
+
+```
+
+# gff to fasta
+mkdir 3_gtf2fasta
+cd 3_gtf2fasta
+perl ../0_Data_Script/gffParse.pl -i ../1_Ht_scaffoldRemoval/Ht_gc26_3000.fa -g ../2_Ht_GenePredict/Ht2_header.gff -c -p -b Ht -F
+cd ..
+
+
+```
