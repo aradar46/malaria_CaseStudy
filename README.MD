@@ -19,7 +19,7 @@ The genomes we will work with are:
 
 ## Workflow
 
-    ![img](02_Data/pics/workflow.png "Workflow")
+    ![img](0_Data_Script/pics/workflow.png "Workflow")
 
 ## Softwares
 
@@ -42,7 +42,7 @@ $ gmes_petap.pl --ES --sequence <seq.raw.genome>
 
 The *H. tartakovskyi* genome was sequenced by the 454 technology. Both shotgun and paired end sequencing were used. The scaffold file is found on the course server and has the name **Haemoproteus_tartakovskyi.genome**. Since the input reads *derive **both from the bird and the parasite, bird scaffolds should be removed***.
 
-![img](02_Data/pics/htGCbefore.png "GC% after removing bird scaffolds")
+![img](0_Data_Script/pics/htGCbefore.png "GC% after removing bird scaffolds")
 
 * GC% before removing bird scaffolds*
 
@@ -80,12 +80,13 @@ We can examine the GC% after removal of birds scaffols
 >
 > Using fastqc for visualization
 >
+>
 > ```
 > $ fastqc fake.fastq 
 > $ firefox fake_fastq.html
 > ```
 
-![img](02_Data/pics/htGCAfter.png "GC% after removing bird scaffolds")
+![img](0_Data_Script/pics/htGCAfter.png "GC% after removing bird scaffolds")
 
     GC% after removing bird scaffolds
 
