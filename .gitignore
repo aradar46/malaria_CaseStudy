@@ -1,0 +1,41 @@
+
+# Ignore log files
+*.log
+
+# Ignore temporary directories
+Data/
+Busco/
+# Ignore files and directories that start with a dot
+.*
+
+# ignore fasata,fna,faa,ffn,frn,gbk,gbff,gb,emb files
+*.fasta
+*.fna
+*.faa
+*.ffn
+*.frn
+*.gbk
+*.gbff
+*.gb
+*.emb
+*.pdf
+*.log
+*.blastp
+*.out
+*.dmnd
+nohop.out
+*.faa.diamond.dmnd
+*.jar
+*.blastout
+*.blastout.reduced
+*.blastout.reduced.faa
+*.blastp
+*.blast
+4_blast/Ht_backup_blast.blastout
+
+*.aligned.faa.reduced
+# Not on exam BirdMalaria.pdf
+Not on exam BirdMalaria.pdf
+
+# Ignore all .ipynb files
+*.ipynb
