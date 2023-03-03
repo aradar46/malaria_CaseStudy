@@ -1,0 +1,67 @@
+# myproject.proteinortho.tsv statistics:
+# number of groups that contains at least p% species:
+# p	species	groups	genes in groups
+0%	0	5132 (100%)	22229 (100%)	
+20%	1	5132 (100%)	22229 (100%)	
+30%	2	5132 (100%)	22229 (100%)	
+40%	3	3619 (70.51%)	19050 (85.69%)	
+50%	4	2887 (56.25%)	16749 (75.34%)	
+70%	5	2353 (45.84%)	14535 (65.38%)	
+80%	6	1627 (31.7%)	10822 (48.68%)	
+90%	7	651 (12.68%)	4876 (21.93%)	
+100%	8	83 (1.61%)	730 (3.28%)	
+# NOTE: p=100% correspond to the core proteome and p=0% to all groups
+# number of groups for each input species:
+Pv_new.faa	3530	68.78%
+Pc_new.faa	3511	68.41%
+Pk_rmScaff_new.faa	3402	66.28%
+Py_new.faa	3254	63.4%
+Pf_new.faa	3121	60.81%
+Pb_new.faa	2761	53.79%
+Ht_new.faa	1143	22.27%
+Tg_new.faa	762	14.84%
+
+# ----------------------------------
+# graph file statistics:
+
+# The adjacency matrix, the number of edges between 2 species
+# file	Ht_new.faa	Pb_new.faa	Pc_new.faa	Pf_new.faa	Pk_rmScaff_new.faa	Pv_new.faa	Py_new.faa	Tg_new.faa	
+Ht_new.faa	0	549	583	596	610	595	613	166
+Pb_new.faa	549	0	1228	1315	1251	1264	1580	544
+Pc_new.faa	583	1228	0	1458	1742	1878	1452	613
+Pf_new.faa	596	1315	1458	0	1510	1548	1518	618
+Pk_rmScaff_new.faa	610	1251	1742	1510	0	1740	1502	631
+Pv_new.faa	595	1264	1878	1548	1740	0	1464	690
+Py_new.faa	613	1580	1452	1518	1502	1464	0	619
+Tg_new.faa	166	544	613	618	631	690	619	0
+
+# file	average number of edges
+Ht_new.faa	464	
+Pb_new.faa	966.375	
+Pc_new.faa	1119.25	
+Pf_new.faa	1070.375	
+Pk_rmScaff_new.faa	1123.25	
+Pv_new.faa	1147.375	
+Py_new.faa	1093.5	
+Tg_new.faa	485.125	
+
+# The 2-path matrix, the number of paths between 2 species of length 2
+# file	Ht_new.faa	Pb_new.faa	Pc_new.faa	Pf_new.faa	Pk_rmScaff_new.faa	Pv_new.faa	Py_new.faa	Tg_new.faa	
+Ht_new.faa(0)	2125956	4073698	4715004	4447231	4663117	4784790	4508718	2199270
+Pb_new.faa(1)	8147396	9493643	9418003	8697942	9375500	9533679	8181997	4296129
+Pc_new.faa(2)	9430008	18836006	13019158	10082822	9928865	9735839	10256186	4959664
+Pf_new.faa(3)	8894462	17395884	20165644	11572857	9911975	10031076	9476898	4668622
+Pk_rmScaff_new.faa(4)	9326234	18751000	19857730	19823950	12933530	10187488	10110023	4913168
+Pv_new.faa(5)	9569580	19067358	19471678	20062152	20374976	13521905	10479165	4898420
+Py_new.faa(6)	9017436	16363994	20512372	18953796	20220046	20958330	12067258	4747400
+Tg_new.faa(7)	4398540	8592258	9919328	9337244	9826336	9796840	9494800	2338607
+
+# file	average number of 2-paths
+Ht_new.faa(0)	7613701.5
+Pb_new.faa(1)	14580942.375
+Pc_new.faa(2)	16401490.5
+Pf_new.faa(3)	15775748.625
+Pk_rmScaff_new.faa(4)	16389225.25
+Pv_new.faa(5)	16602852.375
+Py_new.faa(6)	15948504
+Tg_new.faa(7)	7962994.125

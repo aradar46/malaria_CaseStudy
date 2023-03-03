@@ -132,3 +132,84 @@ cd ..
 
 
 ```
+
+
+
+> There were 1274 scaffolds containing genes.
+> The scaffolds contained 2083 genes.
+> The genes contained the feature CDS 6471 times.
+> INFO: The scaffold/genome file ../1_Ht_scaffoldRemoval/Ht_gc26_3000.fa was successfully parsed.
+> There were 1370 scaffolds. This number may be higher than the one above.
+>
+
+
+
+## Remove scaffolds that have genes that are from avian origin
+
+```
+
+mkdir 4_blast
+cd 4_blast
+nohup blastp -query ../3_gtf2fasta/Ht.faa -db SwissProt -evalue 1e-10 -out Ht_Swissprot.blastp -num_threads 10 &
+cd ..
+
+```
+
+
+```
+
+mkdir 5_scaff_rm_afterBlast
+cd 5_scaff_rm_afterBlast
+python3 ../0_Data_Script/datParser.py ../4_blast/Ht_backup_blast.blastout
+ ../3_gtf2fasta/Ht.fna
+ ../0_Data_Script/taxonomy.dat ../0_Data_Script/uniprot_sprot.dat > scaffoldsMine.txt
+
+
+```
+
+
+
+### remove similar scaffolds
+
+```
+python3 ../0_Data_Script/scaffoldCleaner.py scaffolds.txt
+ ../3_gtf2fasta/Ht.fna new3.fasta
+cd ..
+```
+
+# new gene predicttion
+
+```
+mkdir 6_newGPred
+cd 6_newGPred
+gmes_petap.pl --ES --sequence ../5_scaff_rm_afterBlast/new3.fasta
+ --min_contig 5000 --cores 3
+cd ..
+gmes_petap.pl --ES --sequence ../5_scaff_rm_afterBlast/new_3_mine.fasta --min_contig 3000 --cores 10
+```
+
+# gff to fasta
+
+```
+
+mkdir 3_gtf2fasta
+cd 3_gtf2fasta
+perl ../0_Data_Script/gffParse.pl -i ../1_Ht_scaffoldRemoval/Ht_gc26_3000.fa
+ -g ../2_Ht_GenePredict/Ht2_header.gff -c -p -b Ht -F
+```
+
+## proto
+
+```
+proteinortho6.pl ../7_gft2fasta_NEW/{Ht,Pb,Pc,Pf,Pk_rmScaff,Pv,Py,Tg}_new.faa
+```
+
+## busco
+
+bash loop.sh
+
+
+
+# Tree
+
+![img](0_Data_Script/pics/tree.png))

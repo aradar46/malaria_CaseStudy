@@ -1,0 +1,9 @@
+Sequence names of taxon 1 and 2 are identical, they are both called Pk_rmScaff
+Sequence names of taxon 3 and 4 are identical, they are both called Pv
+Sequence names of taxon 5 and 6 are identical, they are both called Pc
+Sequence names of taxon 7 and 8 are identical, they are both called Ht
+Sequence names of taxon 9 and 10 are identical, they are both called Pf
+Sequence names of taxon 11 and 12 are identical, they are both called Pb
+Sequence names of taxon 13 and 14 are identical, they are both called Py
+Sequence names of taxon 15 and 16 are identical, they are both called Tg
+ERROR: Found 8 taxa that had equal names in the alignment, exiting...

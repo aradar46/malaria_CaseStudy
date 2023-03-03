@@ -1,0 +1,20 @@
+LABEL          data/training.fna
+SEQUENCE_SIZE  1569179
+SEQUENCE_ACGT  1569179
+NT_A           717708
+NT_C           167148
+NT_G           236745
+NT_T           447578
+NT_N           0
+NT_X           0
+SEQUENCE_atcg  0
+NT_a           0
+NT_c           0
+NT_g           0
+NT_t           0
+NT_n           0
+NT_x           0
+SEQUENCE_other 0
+GC             26
+RECORDS        358
+

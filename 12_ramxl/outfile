@@ -1,0 +1,93 @@
+
+Consensus tree program, version 3.697
+
+Species in order: 
+
+  1. Pb
+  2. Py
+  3. Pc
+  4. Pv
+  5. Pk rmScaff
+  6. Pf
+  7. Ht
+  8. Tg
+
+
+Sets included in the consensus tree
+
+Set (species in order)     How many times out of  116.00
+
+..******                   111.00
+..***...                   99.00
+......**                   70.00
+..**....                   65.00
+.....***                   35.00
+
+
+Sets NOT included in consensus tree:
+
+Set (species in order)     How many times out of  116.00
+
+..*.*...                   25.00
+..***.**                   25.00
+..***..*                   23.00
+..****..                   22.00
+.....**.                   18.00
+...**...                   13.00
+..*****.                    9.00
+.....*.*                    8.00
+..****.*                    8.00
+...*...*                    7.00
+..**...*                    6.00
+..***.*.                    5.00
+....*..*                    4.00
+..*.*..*                    3.00
+..*....*                    2.00
+.*.....*                    2.00
+....*.**                    2.00
+...**..*                    2.00
+..**..**                    1.00
+....****                    1.00
+...*****                    1.00
+..*.*.**                    1.00
+.*****..                    1.00
+..*..**.                    1.00
+..**.***                    1.00
+...*..**                    1.00
+.*...**.                    1.00
+.*.**..*                    1.00
+.*****.*                    1.00
+....**..                    1.00
+...*.*..                    1.00
+...*.**.                    1.00
+.******.                    1.00
+.*....*.                    1.00
+
+
+Extended majority rule consensus tree
+
+CONSENSUS TREE:
+the numbers on the branches indicate the number
+of times the partition of the species into the two sets
+which are separated by that branch occurred
+among the trees, out of 116.00 trees
+
+                                  +-------Ht
+                          +--70.0-|
+                  +--35.0-|       +-------Tg
+                  |       |
+                  |       +---------------Pf
+          +-111.0-|
+          |       |               +-------Pv
+          |       |       +--65.0-|
+  +-------|       +--99.0-|       +-------Pc
+  |       |               |
+  |       |               +---------------Pk rmScaff
+  |       |
+  |       +-------------------------------Py
+  |
+  +---------------------------------------Pb
+
+
+  remember: this is an unrooted tree!
+

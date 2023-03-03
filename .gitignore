@@ -9,6 +9,7 @@ Busco/
 .*
 *.mod
 *.cfg
+*..blastp
 # ignore fasata,fna,faa,ffn,frn,gbk,gbff,gb,emb files
 *.fasta
 *.fna
